@@ -1,7 +1,7 @@
 package com.akzia.inets.refrigerator.model;
 
 import com.akzia.inets.refrigerator.Utils;
-import org.codehaus.jackson.annotate.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;

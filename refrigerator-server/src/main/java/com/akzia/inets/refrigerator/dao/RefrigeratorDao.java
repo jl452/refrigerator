@@ -36,7 +36,8 @@ public class RefrigeratorDao{
 	}
 
 	public <X> X getById(Class<X> clazz, long id){
-		return getSession().get(clazz, id);
+		//noinspection unchecked
+		return (X)getSession().get(clazz, id);
 	}
 
 	public <X> List<X> getAll(Class<X> clazz){
